@@ -1,7 +1,7 @@
 #include <stdio.h>
-/*
+/**
  * main - Entry point
- * discription: 'helloputs'
+ * description - starting point
  * Return: Always 0
  */
 int main(void)
