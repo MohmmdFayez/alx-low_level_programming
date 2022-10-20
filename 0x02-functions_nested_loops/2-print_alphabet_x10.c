@@ -1,0 +1,21 @@
+#include "main.h"
+/**
+ * print_alphabet_x10 - a function that prints tenth times the alphabet
+ * a function that prints tenth times the alphabet
+ * Return: 0
+ */
+void print_alphabet_x10(void)
+
+{
+	int n, j;
+
+	while (j < 10)
+	{
+		for (n = 'a'; n <= 'z'; n++)
+		{
+			_putchar(n);
+		}
+		j++;
+		_putchar('\n');
+	}
+}
