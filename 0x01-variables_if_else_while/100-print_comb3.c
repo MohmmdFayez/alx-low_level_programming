@@ -13,9 +13,12 @@ int main(void)
 	{
 		while (j <= '9')
 		{
-			putchar(i);
-			putchar(j);
-			if (j == '9' && i == '9')
+			if (!(i > j || i == j))
+			{
+				putchar(i);
+				putchar(j);
+			}
+			if (i == '8' && j == '9')
 			{
 				putchar('\n');
 			}
@@ -26,10 +29,7 @@ int main(void)
 			}
 			j++;
 		}
-		if (j >= '9')
-		{
-			j = '0';
-		}
+		j = '0';
 		i++;
 	}
 	return (0);
